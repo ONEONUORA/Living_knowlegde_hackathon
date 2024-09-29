@@ -1,4 +1,5 @@
 import Carousel from "../components/carousel";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -66,19 +67,21 @@ const Home = () => {
             future together
           </p>
 
-          <button
-            className="btn btn-primary"
-            type="submit"
-            style={{
-              borderRadius: "50px",
-              width: "174px",
-              fontWeight: "bold",
-              margin: "0 auto",
-              display: "block",
-            }}
-          >
-            Launch App <i className="bi bi-arrow-up-right"></i>
-          </button>
+          <Link to="/twinHome">
+            <button
+              className="btn btn-primary"
+              type="submit"
+              style={{
+                borderRadius: "50px",
+                width: "174px",
+                fontWeight: "bold",
+                margin: "0 auto",
+                display: "block",
+              }}
+            >
+              Launch App <i className="bi bi-arrow-up-right"></i>
+            </button>
+          </Link>
         </div>
 
         <Carousel />

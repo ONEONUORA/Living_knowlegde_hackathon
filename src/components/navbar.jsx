@@ -1,12 +1,18 @@
 import {Outlet} from "react-router-dom"
+import Logo from "../assets/Vector2.png"
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light" style={{paddingLeft:"2rem", paddingRight:'2rem',paddingBottom:"1rem", borderBottom:'2px solid grey'}}>
         <div className="container-fluid">
+          <div style={{display:"flex", gap:"5px"}}>
+          <img src={Logo} alt="Logo" style={{width:"53px", height:"23px", marginTop:"10px"}}/>
           <a className="navbar-brand" href="#" style={{fontWeight:"bold", color:"black"}}>
             MindMeld
           </a>
+
+          </div>
+         
           <button
             className="navbar-toggler"
             type="button"
