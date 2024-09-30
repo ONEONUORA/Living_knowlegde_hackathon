@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import Carousel from "../components/carousel";
 import { Link } from "react-router-dom";
+import Desktop from "../components/desktopPicture";
 
 const Home = () => {
   return (
@@ -67,21 +69,39 @@ const Home = () => {
             future together
           </p>
 
-          <Link to="/twinHome">
-            <button
-              className="btn btn-primary"
-              type="submit"
-              style={{
-                borderRadius: "50px",
-                width: "174px",
-                fontWeight: "bold",
-                margin: "0 auto",
-                display: "block",
-              }}
-            >
-              Launch App <i className="bi bi-arrow-up-right"></i>
-            </button>
-          </Link>
+          <div style={{display:'flex', gap:"15px", justifyContent:"center", alignItems:"center"}}>
+            <Link to="/twinHome">
+              <button
+                className="btn btn-primary"
+                type="submit"
+                style={{
+                  borderRadius: "50px",
+                  width: "174px",
+                  fontWeight: "bold",
+                  margin: "0 auto",
+                  display: "block",
+                }}
+              >
+                Launch AI <i className="bi bi-arrow-up-right"></i>
+              </button>
+            </Link>
+            <Link to="/revenue" style={{textDecoration:"none"}}>
+              <button
+                className="btn btn-outline-primary"
+                type="submit"
+                style={{
+                  borderRadius: "50px",
+                  width: "174px",
+                  fontWeight: "bold",
+                  margin: "0 auto",
+                  display: "block",
+                  
+                }}
+              >
+                Revenue <i className="bi bi-arrow-up-right"></i>
+              </button>
+            </Link>
+          </div>
         </div>
 
         <Carousel />
@@ -97,6 +117,7 @@ const Home = () => {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
+            marginBottom: "2rem",
           }}
         >
           Brainstorms, co-creates, refines,
@@ -109,67 +130,18 @@ const Home = () => {
             height: "682px",
             background: "rgba(238, 238, 238, 1)",
             borderRadius: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "20px auto",
+            paddingLeft: "12rem",
+            paddingRight: "5rem",
+            paddingTop: "3rem",
+            paddingBottom: "3rem",
           }}
         >
-          {/* No text inside the box */}
+          <Desktop />
         </div>
       </section>
 
-      {/* ************************* section Three************************** */}
-      <section className="container" style={{ marginTop: "2.5rem" }}>
-        <h3
-          style={{
-            fontWeight: "500",
-            fontSize: "40px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
-          Summarizes interactions. Uncovers insights.
-          <br /> Enhances creativity.
-        </h3>
-
-        <div
-          style={{
-            width: "1240px",
-            height: "682px",
-            background: "rgba(238, 238, 238, 1)",
-            borderRadius: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "20px auto",
-          }}
-        >
-          {/* No text inside the box */}
-        </div>
-      </section>
-
-      {/* ************************* section four************************** */}
-      <section className="container" style={{ marginTop: "2.5rem" }}>
-        <h3
-          style={{
-            fontWeight: "500",
-            fontSize: "40px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
-          Discover new ideas. Explore passions.
-          <br /> Solve complex challenges.
-        </h3>
-      </section>
-
-      {/* ************************* section five************************** */}
-      <section className="container" style={{ marginTop: "10rem" }}>
+      {/* ************************* section three************************** */}
+      {/* <section className="container" style={{ marginTop: "2rem" }}>
         <h3
           style={{
             fontWeight: "500",
@@ -188,10 +160,10 @@ const Home = () => {
             height: "682px",
             borderRadius: "10px",
             display: "flex",
-            margin: "5rem auto",
+            margin: "2rem auto",
           }}
         >
-          {/* Left Box */}
+         
           <div
             style={{
               flex: 1,
@@ -200,10 +172,9 @@ const Home = () => {
               borderBottomLeftRadius: "10px",
             }}
           >
-            {/* No text inside the left box */}
+            
           </div>
 
-          {/* Right Box */}
           <div
             style={{
               flex: 1,
@@ -211,9 +182,68 @@ const Home = () => {
               borderRadius: "10px",
             }}
           >
-            {/* No text inside the right box */}
+          
           </div>
         </div>
+      </section> */}
+
+      {/* *************************************section four***************************** */}
+      <section
+        className="container"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          marginTop:"2rem auto"
+        }}
+      >
+        <p style={{ fontWeight: "500", fontSize: "30px" }}>Disclaimer</p>
+        <p style={{ fontWeight: "400", fontSize: "16px" }}>
+          The AI-powered digital twin of MindMeld is an interactive
+          representation based on publicly available data, including speeches,
+          interviews, and writings. While every effort has been made to ensure
+          the accuracy and authenticity of the digital twin's responses, it is
+          important to note that this is a simulated experience and may not
+          perfectly reflect the original views, opinions, or personality of
+          MindMeld.
+        </p>
+        <p style={{ fontWeight: "400", fontSize: "16px" }}>
+          Additionally, the revenue-sharing mechanism is facilitated through
+          smart contracts and blockchain technology. Users should understand the
+          risks involved in blockchain transactions, including potential
+          fluctuations in value and transaction times. The creators of this
+          platform are not liable for any financial losses or discrepancies
+          related to the distribution of revenue or use of the platform
+        </p>
+
+        <p style={{ fontWeight: "400", fontSize: "16px" }}>
+          By using this website, you agree to engage responsibly and understand
+          that interactions with the AI are intended for educational and
+          entertainment purposes only, not for legal, financial, or personal
+          advice.
+        </p>
+      </section>
+
+      <section
+        className="container"
+        style={{
+          backgroundColor: "rgba(238, 238, 238, 1)",
+
+          marginBottom: "2rem",
+          height: "80px",
+        }}
+      >
+        <p
+          style={{
+            fontWeight: "500",
+            fontSize: "17px",
+            paddingTop: "1.5rem",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
+          Hackathon 2024 | MindMeld.
+        </p>
       </section>
     </>
   );

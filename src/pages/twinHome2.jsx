@@ -146,6 +146,7 @@ const TwinHome2 = () => {
               placeholder="Ask me anything..."
               aria-label="Search"
               rows="2"
+              
               style={{
                 width: "100%",
                 borderRadius: "48px",

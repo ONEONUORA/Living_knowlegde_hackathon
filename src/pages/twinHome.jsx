@@ -275,6 +275,7 @@ const TwinHome = () => {
               className="form-control"
               placeholder="Ask me anything..."
               aria-label="Search"
+              disabled={true}
               rows="2"
               style={{
                 width: "100%",
@@ -291,6 +292,7 @@ const TwinHome = () => {
                 overflowWrap: "break-word",
               }}
             />
+            <Link to="/twinHome2">
             <button className="btn">
               <img
                 src={img3}
@@ -311,6 +313,8 @@ const TwinHome = () => {
                 }}
               />
             </button>
+            </Link>
+          
           </div>
         </section>
 
