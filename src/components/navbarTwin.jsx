@@ -18,13 +18,13 @@ const NavbarTwin = () => {
               alt="Logo"
               style={{ width: "53px", height: "23px", marginTop: "15px" }}
             />
-            <a
+            <p
               className="navbar-brand"
               href="#"
               style={{ fontSize: "28px", fontWeight: "400" }}
             >
               TwinGenieAI
-            </a>
+            </p>
           </Link>
 
           <button

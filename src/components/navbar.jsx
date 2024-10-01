@@ -7,9 +7,9 @@ const Navbar = () => {
         <div className="container-fluid">
           <Link to="/" style={{display:"flex", gap:"5px", textDecoration:"none"}}>
           <img src={Logo} alt="Logo" style={{width:"53px", height:"23px", marginTop:"10px"}}/>
-          <a className="navbar-brand" href="#" style={{fontWeight:"bold", color:"black"}}>
+          <p className="navbar-brand" href="#" style={{fontWeight:"bold", color:"black"}}>
             MindMeld
-          </a>
+          </p>
 
           </Link>
          
